@@ -7,9 +7,9 @@ import Col from "../../public/Brand/Col.png";
 import CounterList from "@/components/counter";
 import  { CounterItem } from '@/components/counter';
 import CardCarousel, {Card} from "@/components/carousel";
-import Hellen from "../../public/carousel/hellen.png";
-import Hellena from "../../public/carousel/Hellena.png";
-import Ralph from "../../public/carousel/Ralph.png";
+import Hellen from "../../public/Carousel/hellen.png";
+import Hellena from "../../public/Carousel/Hellena.png";
+import Ralph from "../../public/Carousel/Ralph.png";
 import TeaserYellow from "@/components/teaserYellow";
 import TeaserMessage from "@/components/teaserMessage";
 
