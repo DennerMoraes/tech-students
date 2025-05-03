@@ -3,8 +3,8 @@
 import Link from "next/link"
 import Image from "next/image";
 import BrandLogo from "../../public/Brand/Logo-colored-white.png"
-import Icon from "./IconT";
-import { IconName } from "./IconT";
+import Icon from "./Icon";
+import { IconName } from "./Icon";
 
 export type FooterLinks = {
     href: string;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon, { IconName } from './IconT';
+import Icon, { IconName } from './Icon';
 
 type TitleMarkedProps = {
   text: string;

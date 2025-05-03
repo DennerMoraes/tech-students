@@ -1,6 +1,6 @@
-import { Button } from "./ButtonT";
-import TextBase from "./TextBaseT";
-import { TitleMarked } from "./TitleMarkedT";
+import { Button } from "./Button";
+import TextBase from "./TextBase";
+import { TitleMarked } from "./TitleMarked";
 import icon1 from "@/Icons/icon1.png";
 import icon2 from "@/Icons/icon2.png";
 import icon3 from "@/Icons/icon3.png";
@@ -8,7 +8,7 @@ import icon4 from "@/Icons/icon4.png";
 import icon5 from "@/Icons/icon5.png";
 import Image from 'next/image';
 import Link from "next/link";
-import Icon from "./IconT";
+import Icon from "./Icon";
 import TeaserImage from "../../public/Brand/teaserImage.png";
 
 export default function TeaserHero() {

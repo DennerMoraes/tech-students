@@ -1,6 +1,6 @@
 import React from 'react';
-import AnimatedCounter from './CounterAnimationT';
-import Icon, { IconName } from './IconT';
+import AnimatedCounter from './CounterAnimation';
+import Icon, { IconName } from './Icon';
 
 export type CounterItem = {
     number: number;

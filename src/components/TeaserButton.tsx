@@ -1,8 +1,8 @@
-import TextBase from "./TextBaseT";
-import { TitleMarked } from "./TitleMarkedT";
+import TextBase from "./TextBase";
+import { TitleMarked } from "./TitleMarked";
 import Image, { StaticImageData } from 'next/image';
 import Link from "next/link";
-import Icon, { IconName } from "./IconT";
+import Icon, { IconName } from "./Icon";
 
 type TeaserButtonProps = {
     title: string;

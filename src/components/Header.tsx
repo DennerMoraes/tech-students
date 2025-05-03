@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useCallback } from "react";
 import BrandLogo from "../../public/Brand/Logo-colored.png"
-import Icon from "./IconT";
+import Icon from "./Icon";
 
 type AutButtonProps = {
     className?: string;
