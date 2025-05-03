@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 type AnimatedCounterProps = {
   number: number;
@@ -9,11 +9,36 @@ type AnimatedCounterProps = {
   unit?: string;
 };
 
-const AnimatedCounter: React.FC<AnimatedCounterProps> = ({ number, duration = 1000, className, unit }) => {
+const AnimatedCounter: React.FC<AnimatedCounterProps> = ({
+  number,
+  duration = 1000,
+  className,
+  unit
+}) => {
   const [count, setCount] = useState(0);
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const ref = useRef<HTMLParagraphElement | null>(null);
 
   useEffect(() => {
-    let start = 0;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasAnimated) {
+          animate();
+          setHasAnimated(true);
+          observer.disconnect(); // opcional: remove o observer depois da primeira animação
+        }
+      },
+      { threshold: 0.5 } // quando 50% do elemento estiver visível
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => observer.disconnect();
+  }, [hasAnimated]);
+
+  const animate = () => {
     const startTime = performance.now();
 
     const updateCounter = (timestamp: number) => {
@@ -27,9 +52,14 @@ const AnimatedCounter: React.FC<AnimatedCounterProps> = ({ number, duration = 10
     };
 
     requestAnimationFrame(updateCounter);
-  }, [number, duration]);
+  };
 
-  return <p className={className}>{count}{unit}</p>;
+  return (
+    <p ref={ref} className={className}>
+      {count}
+      {unit}
+    </p>
+  );
 };
 
 export default AnimatedCounter;

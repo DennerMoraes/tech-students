@@ -1,8 +1,8 @@
-import TextBase from "./textBase";
-import { TitleMarked } from "./titleMarked";
+import TextBase from "./TextBase";
+import { TitleMarked } from "./TitleMarked";
 import Image, { StaticImageData } from 'next/image';
 import Link from "next/link";
-import Icon, { IconName } from "./icon";
+import Icon, { IconName } from "./Icon";
 
 type TeaserButtonProps = {
     title: string;
@@ -33,15 +33,15 @@ export default function TeaserButton({ title, highlight, icon, buttonTitle, desc
                             <TextBase text={desc} className="text-[16px] lg:text-[20px]" />
                         )}
                         {teaserList && teaserList.map((item, index) => (
-                            <p key={index} className="flex flex-row items-start lg:items-center gap-1 lg:gap-3 text-[20px] text-blueText font-roboto leading-[36px]">
+                            <div key={index} className="flex flex-row items-start lg:items-center gap-1 lg:gap-3 text-[20px] text-blueText font-roboto leading-[36px]">
                                 <div className="w-6 h-6 flex items-center justify-center">
                                     <Icon name="check" />
                                 </div>
                                 {item.label}
-                            </p>
+                            </div>
                         ))}
                     </div>
-                    <Link className="flex flex-row py-4 items-center justify-start gap-4 font-roboto text-[16px] lg:text-[20px] leading-[24px] font-[600] text-blueLink" href={href}>
+                    <Link className="flex flex-row py-4 items-center justify-start gap-4 font-roboto text-[16px] lg:text-[20px] leading-[24px] font-[600] text-blueLink hover:text-orange transition-all duration-300" href={href}>
                         {buttonTitle}
                         <Icon name="arrowRight" fill="currentColor" />
                     </Link>

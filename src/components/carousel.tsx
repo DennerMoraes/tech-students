@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { StaticImageData } from 'next/image';
 import Image from 'next/image';
-import Icon from './icon';
+import Icon from './Icon';
 
 export type Card = {
   name: string;
@@ -24,10 +24,10 @@ export default function CardCarousel({ items, title }: CardCarouselProps) {
   return (
     <div className="relative w-full">
       <div className="relative max-w-330 px-4 mx-auto overflow-visible py-10 md:py-20">
-        <button className="swiper-button-prev-custom hidden md:block absolute top-[85px] right-[72px] z-10 text-orange hover:text-blueLink">
+        <button className="swiper-button-prev-custom-1 hidden md:block absolute top-[85px] right-[72px] z-10 text-orange hover:text-blueLink hover:cursor-pointer transition-all duration-300" aria-label="Previous slide">
           <Icon name='carouselLeft' fill='currentColor' />
         </button>
-        <button className="swiper-button-next-custom hidden md:block absolute top-[85px] right-0 z-10 text-orange hover:text-blueLink">
+        <button className="swiper-button-next-custom-1 hidden md:block absolute top-[85px] right-0 z-10 text-orange hover:text-blueLink hover:cursor-pointer transition-all duration-300" aria-label="Next slide">
           <Icon name='carouselRight' fill='currentColor' />
         </button>
 
@@ -37,8 +37,8 @@ export default function CardCarousel({ items, title }: CardCarouselProps) {
           slidesPerView={1.1}
           spaceBetween={16}
           navigation={{
-            prevEl: '.swiper-button-prev-custom',
-            nextEl: '.swiper-button-next-custom',
+            prevEl: '.swiper-button-prev-custom-1',
+            nextEl: '.swiper-button-next-custom-1',
           }}
           breakpoints={{
             640: {

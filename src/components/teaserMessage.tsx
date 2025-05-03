@@ -46,7 +46,7 @@ export default function TeaserMessage({ title, desc, buttonText }: TeaserMessage
                 <div className="mx-auto pt-4">
                     <button
                         type="submit"
-                        className="px-7 lg:px-12 py-3 lg:py-5 text-[16px] lg:text-[24px] leading-[24px] inline-flex items-center justify-center rounded-lg font-[700] font-roboto transition-colors duration-300 text-white bg-blueText hover:bg-blueLink"
+                        className="px-7 lg:px-12 py-3 lg:py-5 text-[16px] lg:text-[24px] leading-[24px] inline-flex items-center justify-center rounded-lg font-[700] font-roboto text-white bg-blueText hover:bg-blueLink hover:cursor-pointer transition-all duration-300"
                         aria-label="Send message"
                     >
                         {buttonText}

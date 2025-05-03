@@ -2,9 +2,9 @@
 
 import Link from "next/link"
 import Image from "next/image";
-import BrandLogo from "../../public/Brand/Logo-colored-white.svg"
-import Icon from "./icon";
-import { IconName } from "./icon";
+import BrandLogo from "../../public/Brand/Logo-colored-white.png"
+import Icon from "./Icon";
+import { IconName } from "./Icon";
 
 export type FooterLinks = {
     href: string;
@@ -88,7 +88,7 @@ export default function Footer() {
                             src={BrandLogo}
                             alt="teach logo"
                             className="w-auto"
-                            width={103}
+                            width={173}
                             height={35}
                         />
                     </Link>

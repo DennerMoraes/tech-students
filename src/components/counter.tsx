@@ -1,7 +1,6 @@
-// components/CounterList.tsx
 import React from 'react';
-import AnimatedCounter from './counterAnimation';
-import Icon, { IconName } from './icon';
+import AnimatedCounter from './CounterAnimation';
+import Icon, { IconName } from './Icon';
 
 export type CounterItem = {
     number: number;

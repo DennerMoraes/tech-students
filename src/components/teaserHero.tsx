@@ -1,6 +1,6 @@
-import { Button } from "./button";
-import TextBase from "./textBase";
-import { TitleMarked } from "./titleMarked";
+import { Button } from "./Button";
+import TextBase from "./TextBase";
+import { TitleMarked } from "./TitleMarked";
 import icon1 from "@/Icons/icon1.png";
 import icon2 from "@/Icons/icon2.png";
 import icon3 from "@/Icons/icon3.png";
@@ -8,7 +8,7 @@ import icon4 from "@/Icons/icon4.png";
 import icon5 from "@/Icons/icon5.png";
 import Image from 'next/image';
 import Link from "next/link";
-import Icon from "./icon";
+import Icon from "./Icon";
 import TeaserImage from "../../public/Brand/teaserImage.png";
 
 export default function TeaserHero() {
@@ -20,7 +20,9 @@ export default function TeaserHero() {
                     <TextBase text="Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies." className="text-[16px] lg:text-[24px]"/>
                     <div className="flex flex-row gap-8">
                         <Button href="/home" variant="orange">Sign Up Now</Button>
-                        <Link className="flex flex-row items-center justify-center gap-4 font-roboto text-[16px] lg:text-[20px] leading-[24px] font-[600] text-blueLink" href="/demo"><Icon name="playIcon"/>View Demo</Link>
+                        <Link className="flex flex-row items-center justify-center gap-4 font-roboto text-[16px] lg:text-[20px] leading-[24px] font-[600] text-blueLink hover:text-orange transition-all duration-300" href="/demo">
+                            <Icon name="playIcon" fill="currentColor"/>View Demo
+                        </Link>
                     </div>
                     <div className="flex flex-col lg:flex-row flex-wrap items-start lg:items-center gap-4 lg:gap-12">
                         <p className="lg:max-w-[135px] text-blueGray font-[16px]">Trusted by <br className="hidden lg:block"/> leading companies</p>

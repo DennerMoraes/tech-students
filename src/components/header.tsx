@@ -3,8 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useCallback } from "react";
-import BrandLogo from "../../public/Brand/Logo-colored.svg"
-import Icon from "./icon";
+import BrandLogo from "../../public/Brand/Logo-colored.png"
+import Icon from "./Icon";
 
 type AutButtonProps = {
     className?: string;
@@ -53,25 +53,25 @@ export default function Header() {
 
             <div className="relative">
                 <button
-                    className="group flex items-center text-4 leading-6 px-2 py-3 text-blueText font-[600] duration-200 font-roboto hover:text-blueLink"
+                    className="group flex items-center text-4 leading-6 px-2 py-3 text-blueText font-[600] duration-200 font-roboto hover:text-blueLink transition-all"
                     onClick={toggleDropdown}
                     aria-expanded={dropdownOpen}
                     aria-haspopup="true"
                 >
-                    <span className="pr-2">Resources</span>
+                    <span className="pr-2 transition-all duration-300">Resources</span>
                     <div
-                        className={`inline-block transition-transform duration-200 group-hover:text-blueLink ${dropdownOpen ? 'rotate-180' : ''}`}
+                        className={`inline-block transition-all duration-200 group-hover:text-blueLink ${dropdownOpen ? 'rotate-180' : ''}`}
                     >
                         <Icon name="arrowDown" fill="currentColor" />
                     </div>
                 </button>
                 {dropdownOpen && (
-                    <div className="absolute left-0 mt-2 w-48 p-4 bg-white shadow rounded-md z-50">
+                    <div className="absolute left-0 mt-2 w-48 p-4 bg-white shadow-boxShadow rounded-md z-50">
                         {dropdownItems.map((item) => (
                             <Link
                                 key={item.href}
                                 href={item.href}
-                                className="flex col leading-3 px-2 py-3 text-blueText font-[500] duration-200 font-roboto hover:text-blueLink"
+                                className="flex col leading-3 px-2 py-3 text-blueText font-[500] font-roboto hover:text-blueLink transition-all duration-200 hover:cursor-pointer"
                                 onClick={closeAllMenus}
                             >
                                 {item.label}
