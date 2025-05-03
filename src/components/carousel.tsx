@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { StaticImageData } from 'next/image';
 import Image from 'next/image';
-import Icon from './Icon';
+import Icon from './IconT';
 
 export type Card = {
   name: string;

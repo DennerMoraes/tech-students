@@ -2,7 +2,7 @@ import TextBase from "./TextBase";
 import { TitleMarked } from "./TitleMarked";
 import Image, { StaticImageData } from 'next/image';
 import Link from "next/link";
-import Icon, { IconName } from "./Icon";
+import Icon, { IconName } from "./IconT";
 
 type TeaserButtonProps = {
     title: string;

@@ -3,8 +3,8 @@
 import Link from "next/link"
 import Image from "next/image";
 import BrandLogo from "../../public/Brand/Logo-colored-white.png"
-import Icon from "./Icon";
-import { IconName } from "./Icon";
+import Icon from "./IconT";
+import { IconName } from "./IconT";
 
 export type FooterLinks = {
     href: string;
@@ -103,7 +103,7 @@ export default function Footer() {
                             </Link>
                             <ul className="pt-3">
                                 {section.links.map(link => (
-                                    <li key={link.href} className="py-3">
+                                    <li key={`${section.title}-${link.label}`} className="py-3">
                                         <Link href={link.href} aria-label={link.label} className="flex gap-2 flex-row items-center text-4 leading-[18px] text-white font-[400] duration-200 font-roboto hover:text-orange">
                                             {link.label}
                                             {link.icon && (
@@ -132,21 +132,22 @@ export default function Footer() {
                             href={'/EN'}
                             className="flex flex-row items-center text-4 leading-[22px] py-3 text-white font-[400] duration-200 font-roboto hover:text-orange"
                         >
-                            <Icon name="world" />
+                            <Icon name="world" fill="currentColor"/>
                             <p className="pl-2">EN</p>
                         </Link>
                         <Link
                             href={'/EN'}
                             className="flex flex-row items-center text-4 leading-[22px] py-3 text-white font-[400] duration-200 font-roboto hover:text-orange"
                         >
-                            <Icon name="euro" />
+                            <Icon name="euro" fill="currentColor"/>
                             <p className="pl-2">EUR</p>
                         </Link>
                         <Link
+                            aria-label="accessibility"
                             href={'/EN'}
                             className="flex flex-row items-center text-4 leading-[22px] py-3 text-white font-[400] duration-200 font-roboto hover:text-orange"
                         >
-                            <Icon name="accessibility" />
+                            <Icon name="accessibility" fill="currentColor"/>
                         </Link>
 
                     </div>

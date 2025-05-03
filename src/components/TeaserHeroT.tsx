@@ -8,7 +8,7 @@ import icon4 from "@/Icons/icon4.png";
 import icon5 from "@/Icons/icon5.png";
 import Image from 'next/image';
 import Link from "next/link";
-import Icon from "./Icon";
+import Icon from "./IconT";
 import TeaserImage from "../../public/Brand/teaserImage.png";
 
 export default function TeaserHero() {

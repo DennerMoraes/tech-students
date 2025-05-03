@@ -1,5 +1,5 @@
-import TeaserButton from "@/components/TeaserButton";
-import TeaserHero from "@/components/TeaserHero";
+import TeaserButton from "@/components/TeaserButtonT";
+import TeaserHero from "@/components/TeaserHeroT";
 import teaserButtonImage from "../../public/Brand/teaserButtonImage.png";
 import teaserButtonImageMobile from "../../public/Brand/teaserButtonImageMobile.png";
 import Right from "../../public/Brand/Right.png";

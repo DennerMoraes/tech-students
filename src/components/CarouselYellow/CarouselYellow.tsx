@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { StaticImageData } from 'next/image';
 import Image from 'next/image';
-import Icon from '../Icon';
+import Icon from '../IconT';
 import Square from '../../../public/Brand/square.png';
 import './CarouselYellow.css';
 
