@@ -1,5 +1,5 @@
 import TextBase from "./TextBaseT";
-import { TitleMarked } from "./TitleMarked";
+import { TitleMarked } from "./TitleMarkedT";
 import Image, { StaticImageData } from 'next/image';
 import Link from "next/link";
 import Icon, { IconName } from "./IconT";

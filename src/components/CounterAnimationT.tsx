@@ -25,10 +25,10 @@ const AnimatedCounter: React.FC<AnimatedCounterProps> = ({
         if (entry.isIntersecting && !hasAnimated) {
           animate();
           setHasAnimated(true);
-          observer.disconnect(); // opcional: remove o observer depois da primeira animação
+          observer.disconnect();
         }
       },
-      { threshold: 0.5 } // quando 50% do elemento estiver visível
+      { threshold: 0.5 }
     );
 
     if (ref.current) {

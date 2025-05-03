@@ -1,6 +1,6 @@
 import { Button } from "./ButtonT";
 import TextBase from "./TextBaseT";
-import { TitleMarked } from "./TitleMarked";
+import { TitleMarked } from "./TitleMarkedT";
 import icon1 from "@/Icons/icon1.png";
 import icon2 from "@/Icons/icon2.png";
 import icon3 from "@/Icons/icon3.png";
