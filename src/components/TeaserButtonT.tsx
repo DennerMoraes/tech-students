@@ -1,4 +1,4 @@
-import TextBase from "./TextBase";
+import TextBase from "./TextBaseT";
 import { TitleMarked } from "./TitleMarked";
 import Image, { StaticImageData } from 'next/image';
 import Link from "next/link";

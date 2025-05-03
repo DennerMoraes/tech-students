@@ -1,4 +1,4 @@
-import { Button } from "./Button";
+import { Button } from "./ButtonT";
 import Image from 'next/image';
 import YellowPhotos from "../../public/Brand/YellowPhotos.png";
 import YellowPhotosMobile from "../../public/Brand/YellowPhotosMobile.png";
